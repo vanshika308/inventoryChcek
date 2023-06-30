@@ -1,0 +1,125 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(15px);
+  }
+
+  #my-form {
+    display: flex;
+    margin-top: 15px;
+    font-size: 20px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50%;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        color: white;
+        background-color: black;
+  }
+  #my-form div{
+    margin-bottom: 30px;
+  }
+  #list {
+    margin-top: 20px;
+  }
+  li{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  li button {
+    margin-right: 5px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 7px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  #item{
+    color: #ccc;
+  }
+  li button:hover {
+    background-color: #0056b3;
+  }
+  #items{
+    background-color: black;
+    color: white;
+  }
+  @keyframes glow {
+    0% {
+      text-shadow: 0 0 5px black;
+    }
+    50% {
+      text-shadow: 0 0 20px rgb(197, 53, 53);
+    }
+    100% {
+      text-shadow: 0 0 5px rgb(0, 0, 0);
+    }
+  }
+  
+  @keyframes bounce {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  #header h1 {
+    color: rgb(255, 255, 255);
+    animation: glow 2s infinite, bounce 2s infinite;
+  }
+
+  #my-form input[type="text"],
+#my-form input[type="number"] {
+  padding: 8px;
+  border: 1px solid #230202;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+#my-form input[type="text"]:focus,
+#my-form input[type="number"]:focus {
+  outline: rgb(3, 2, 65);
+  border-color: #72c51f;
+  box-shadow: 0 0 20px #4b5869;
+}
+
+#my-form input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #012e65;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#my-form input[type="submit"]:hover {
+  background-color: #4672a6;
+}
+.button{
+  margin-left: 10px;
+}
+h2{
+   background-color: black;
+   color: white;
+   font-size: 30px;
+}
